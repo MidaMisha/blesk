@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блеск</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/logo/favicon.png" type="image/x-icon">
+    <script src="../assets/js/main.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <a href="#"><img src="../assets/logo/logo.png" class="logo" alt=""></a>
+            <nav>
+                <a href="../index.html">Главная</a>
+                <a href="../pages/about.html">О компании</a>
+                <a href="../pages/catalog.html">Каталог товаров</a>
+                <a href="../pages/trends.html">Тренды и гиды</a>
+                <a href="../pages/basket.html" class="basket"><img src="../assets/media/icons/basket.png" alt="">Корзина</a>
+            </nav>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <label for="menu-toggle" class="burger-icon">
+                <img src="../assets/media/icons/burger.svg" alt="Меню">
+            </label>
+            <div class="overlay"></div>
+            <div class="menu">
+                <nav>
+                    <a href="../index.html">Главная</a>
+                    <a href="../pages/about.html">О компании</a>
+                    <a href="../pages/catalog.html">Каталог товаров</a>
+                    <a href="../pages/trends.html">Тренды и гиды</a>
+                    <img src="../assets/logo/logo.png" alt="">
+                </nav>
+            </div>
+            <div class="bas_reg">
+                <a  href="../pages/basket.html"><img src="../assets/media/icons/basket.png"  alt="" class="header_bas"></a>
+                <a href="../pages/cabinet.html"><img src="../assets/media/icons/autoreg.png" class="autoreg" alt=""></a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- cabinet page -->
+    <div class="cabinet_page container">
+        <div class="title">
+            <h3>Личный кабинет</h3>
+            <hr>
+        </div>
+        <div class="cabinet_box">
+            <div class="personal_info cab_card">
+                <div class="cab_head">
+                    <img src="../assets/media/cabinet/1.png" alt="">
+                    <h3>Персональная информация</h3>
+                </div>
+                <div class="one_info name">
+                    <h3>Имя</h3>
+                    <p>Михаил</p>
+                </div>
+                <div class="one_info email">
+                    <h3>Email</h3>
+                    <p>Mitrofanovm226@gmail.com</p>
+                </div>
+                <div class="one_info tel">
+                    <h3>Телефон</h3>
+                    <p>+7 (901) 701 35 25</p>
+                </div>
+                <div class="cab_btns">
+                    <button class="btn btn_cabinet">Изменить данные</button>
+                    <button class="btn btn_cabinet">Изменить пароль</button>
+                </div>
+            </div>
+            <div class="del_card cab_card">
+                <div class="cab_head">
+                    <img src="../assets/media/cabinet/3.png" alt="">
+                    <h3>Профили доставки</h3>
+                </div>
+                <div class="one_del">
+                    <p>г.Казань, ул.Рихарда Зорге, д.60, кв.3, подъезд 1</p>
+                    <div class="del_btn">
+                        <a href="#" class="del_update">Изменить</a>
+                        <a href="#" class="del_delete">Удалить</a>
+                    </div>
+                </div>
+                <div class="one_del">
+                    <p>г.Казань, ул.Рихарда Корги, д.52,
+                        кв.2, подъезд 3</p>
+                    <div class="del_btn">
+                        <a href="#" class="del_update">Изменить</a>
+                        <a href="#" class="del_delete">Удалить</a>
+                    </div>
+                </div>
+                <button class="btn btn_cabinet">Добавить адрес</button>
+            </div>
+            <div class="his_ordery cab_card">
+                <div class="cab_head">
+                    <img src="../assets/media/cabinet/4.png" alt="">
+                    <h3>История заказов</h3>
+                </div>
+                <div class="one_his">
+                    <div class="ord_name">
+                        <h3>Заказ №1</h3>
+                        <p>10 000₽</p>
+                    </div>
+                    <p>Успешно</p>
+                </div>
+                <div class="one_his">
+                    <div class="ord_name">
+                        <h3>Заказ №1</h3>
+                        <p>10 000₽</p>
+                    </div>
+                    <p>Успешно</p>
+                </div>
+                    <button class="btn btn_cabinet">ВСЕ ЗАКАЗЫ</button>
+            </div>
+            <div class="news_ordery cab_card">
+                <div class="cab_head">
+                    <img src="../assets/media/cabinet/2.png" alt="">
+                    <h3>Подписаться на рассылку</h3>
+                </div>
+                <div class="one_his name">
+                    <div class="news_check">
+                        <input type="checkbox" name="" id="first_check"> 
+                        <label for="first_check">Хочу получать новости</label>
+                    </div>
+                    <div class="news_check">
+                        <input type="checkbox" name="" id="second_check"> 
+                        <label for="second_check">Хочу получать акции</label>
+                    </div>
+                </div>
+                    <button class="btn btn_cabinet">СОХРАНИТЬ ИЗМЕНЕНИЯ</button>
+            </div> 
+        </div>
+       <div class="btn_delete_block"><button class="btn btn_cabinet">выйти</button></div> 
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container footer_main">
+            <div class="footer__img">
+                <img src="../assets/logo/footer_logo.png" alt="">
+            </div>
+            <div class="call">
+                <h4>Обратная связь</h4>
+                <p>Оставьте заявку и наши менеджеры
+                    свяжутся с вами в течении 15 минут</p>
+                <form>
+                    <input type="text" placeholder="* Имя:">
+                    <input type="text" placeholder="* Телефон:">
+                    <label>Отправляя данную форму, вы соглашаетесь c
+                        <a href="#">Политикой конфиденциальности</a></label>
+                    <input type="submit" class="btn btn_first" value="Отправить">
+                </form>
+            </div>
+            <div class="contacts">
+                <h4>Контакты</h4>
+                <div class="con_box">
+                    <div class="phone">
+                        <img src="../assets/media/icons/tel.png" alt="">
+                        <p>+7 (901) 701 35 25</p>
+                    </div>
+                    <div class="geo">
+                        <img src="../assets/media/icons/geo.png" alt="">
+                        <p>ул Галеева, 3, подъезд 1</p>
+                    </div>
+                    <div class="mail">
+                        <img src="../assets/media/icons/mail.png" alt="">
+                        <p>Blesk@mail.ru</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_last container">
+            <p>Блеск © 2025 | Все права защищены</p>
+            <h2>Митрофанов Михаил</h2>
+            <div class="icons">
+                <img src="../assets/media/icons/tg.png" alt="">
+                <img src="../assets/media/icons/wk.png" alt="">
+                <img src="../assets/media/icons/youtube.png" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

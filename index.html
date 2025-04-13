@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блеск</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/logo/favicon.png" type="image/x-icon">
+    <script src="assets/js/main.js" defer></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <a href="#"><img src="assets/logo/logo.png" class="logo" alt=""></a>
+            <nav>
+                <a href="index.html">Главная</a>
+                <a href="pages/about.html">О компании</a>
+                <a href="pages/catalog.html">Каталог товаров</a>
+                <a href="pages/trends.html">Тренды и гиды</a>
+                <a href="pages/basket.html" class="basket"><img src="assets/media/icons/basket.png" alt="">Корзина</a>
+            </nav>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <label for="menu-toggle" class="burger-icon">
+                <img src="assets/media/icons/burger.svg" alt="Меню">
+            </label>
+            <div class="overlay"></div>
+            <div class="menu">
+                <nav>
+                    <a href="index.html">Главная</a>
+                    <a href="pages/about.html">О компании</a>
+                    <a href="pages/catalog.html">Каталог товаров</a>
+                    <a href="pages/trends.html">Тренды и гиды</a>
+                    <img src="assets/logo/logo.png" alt="">
+                </nav>
+            </div>
+            <div class="bas_reg">
+                <a  href="pages/basket.html"><img src="assets/media/icons/basket.png"  alt="" class="header_bas"></a>
+                <a href="pages/cabinet.html"><img src="assets/media/icons/autoreg.png" class="autoreg" alt=""></a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- banner -->
+    <div class="banner_bg">
+        <div class="banner_text container">
+            <h1>Блеск</h1>
+            <h2>Ваш дом будет сиять!</h2>
+            <p><span>Акция!</span> Зарегистрируйтесь на сайте прямо сейчас и получите 20% скидку!</p>
+            <button class="btn btn_first">К покупкам</button>
+        </div>
+    </div>
+
+    <!-- advents_1 -->
+    <div class="advents_1 container">
+        <div class="title">
+            <h3>Наши преимущества</h3>
+            <hr>
+        </div>
+        <div class="advents_1_box">
+            <div class="ad_1_card">
+                <img src="assets/media/advents/ad_2.png" alt="">
+                <h5>Экспресс-доставка</h5>
+                <p>Получите заказ уже сегодня или в удобное для вас время</p>
+            </div>
+            <div class="ad_1_card">
+                <img src="assets/media/advents/ad_3.png" alt="">
+                <h5>Экологичный подход</h5>
+                <p>Предлагаем биоразлагаемые и безопасные средства.</p>
+            </div>
+            <div class="ad_1_card">
+                <img src="assets/media/advents/ad_1.png" alt="">
+                <h5>Эксклюзивные продукты</h5>
+                <p>Товары, которые вы не найдете в обычных магазинах</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- about -->
+    <div class="about">
+        <div class="container_1">
+            <div class="first_img"></div>
+            <div class="about_center container">
+                <div class="title">
+                    <h3>О компании</h3>
+                    <hr>
+                </div>
+                <p>
+                    Предлагаем Вашему вниманию широкий ассортимент товаров бытовой химии. На протяжении долгих лет
+                    является
+                    крупнейшим поставщиком на рынке бытовой химии и средств гигиены.
+                </p>
+                <p>
+                    Покупая у нас продукцию, можете быть уверены - вы
+                    приобретаете качественный, безопасный и эффективный продукт для себя и своей семьи!
+                </p>
+                <button class="btn btn_first">Подробнее</button>
+                <div class="ad_card">
+                    <img src="assets/media/icons/time.png" alt="">
+                    <div class="ad_card_text">
+                        <h3>Работаем</h3>
+                        <p>круглосуточно 24/7</p>
+                    </div>
+                </div>
+                <div class="ad_card">
+                    <img src="assets/media/icons/free.png" alt="">
+                    <div class="ad_card_text">
+                        <h3>Бесплатная</h3>
+                        <p>Доставка по городу</p>
+                    </div>
+                </div>
+            </div>
+            <div class="second_img"></div>
+        </div>
+
+    </div>
+
+    <!-- catalog -->
+    <div class="catalog container">
+        <div class="title">
+            <h3>Популярные товары</h3>
+            <hr>
+        </div>
+        <div class="catalog_box">
+            <div class="card">
+                <img src="assets/media/catalog/1.png" alt="">
+                <div class="card__text">
+                    <h5>Мыло жидкое 5л ISABELLA </h5>
+                    <h3>50₽</h3>
+                    <p>Жидкое мыло Isabella зеленый чай </p>
+                </div>
+
+                <button class="btn btn_first" onclick="go()">Подробности</button>
+                <script>
+                    function go() {
+                        document.location = 'pages/product.html';
+                    }
+                </script>
+            </div>
+            <div class="card">
+                <img src="assets/media/catalog/1.png" alt="">
+                <div class="card__text">
+                    <h5>Мыло жидкое 5л ISABELLA </h5>
+                    <h3>50₽</h3>
+                    <p>Жидкое мыло Isabella зеленый чай </p>
+                </div>
+
+                <button class="btn btn_first">Подробности</button>
+            </div>
+            <div class="card">
+                <img src="assets/media/catalog/1.png" alt="">
+                <div class="card__text">
+                    <h5>Мыло жидкое 5л ISABELLA </h5>
+                    <h3>50₽</h3>
+                    <p>Жидкое мыло Isabella зеленый чай </p>
+                </div>
+
+                <button class="btn btn_first">Подробности</button>
+            </div>
+            <div class="card ">
+                <img src="assets/media/catalog/1.png" alt="">
+                <div class="card__text">
+                    <h5>Мыло жидкое 5л ISABELLA </h5>
+                    <h3>50₽</h3>
+                    <p>Жидкое мыло Isabella зеленый чай </p>
+                </div>
+
+                <button class="btn btn_first">Подробности</button>
+            </div>
+            <div class="card card_dn">
+                <img src="assets/media/catalog/1.png" alt="">
+                <div class="card__text">
+                    <h5>Мыло жидкое 5л ISABELLA </h5>
+                    <h3>50₽</h3>
+                    <p>Жидкое мыло Isabella зеленый чай </p>
+                </div>
+
+                <button class="btn btn_first">Подробности</button>
+            </div>
+            <div class="card card_dn">
+                <img src="assets/media/catalog/1.png" alt="">
+                <div class="card__text">
+                    <h5>Мыло жидкое 5л ISABELLA </h5>
+                    <h3>50₽</h3>
+                    <p>Жидкое мыло Isabella зеленый чай </p>
+                </div>
+
+                <button class="btn btn_first">Подробности</button>
+            </div>
+            <div class="card card_dn">
+                <img src="assets/media/catalog/1.png" alt="">
+                <div class="card__text">
+                    <h5>Мыло жидкое 5л ISABELLA </h5>
+                    <h3>50₽</h3>
+                    <p>Жидкое мыло Isabella зеленый чай </p>
+                </div>
+
+                <button class="btn btn_first">Подробности</button>
+            </div>
+            <div class="card card_dn">
+                <img src="assets/media/catalog/1.png" alt="">
+                <div class="card__text">
+                    <h5>Мыло жидкое 5л ISABELLA </h5>
+                    <h3>50₽</h3>
+                    <p>Жидкое мыло Isabella зеленый чай </p>
+                </div>
+
+                <button class="btn btn_first">Подробности</button>
+            </div>
+        </div>
+        <button class="btn btn_first">Ко всем товарам</button>
+    </div>
+
+    <!-- advents_2 -->
+    <div class="ad_bg">
+        <div class="advents_2 container">
+            <div class="title">
+                <h3>Почему стоит выбрать нас?</h3>
+                <hr>
+            </div>
+            <div class="ad_2_box">
+                <div class="ad_2_card">
+                    <h1>5</h1>
+                    <p>Лет</p>
+                </div>
+                <div class="ad_2_card">
+                    <h1>3000</h1>
+                    <p>Клиентов</p>
+                </div>
+                <div class="ad_2_card">
+                    <h1>500</h1>
+                    <p>Товаров</p>
+                </div>
+                <div class="ad_2_card">
+                    <h1>100</h1>
+                    <p>Отзывов</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- reviews -->
+    <div class="reviews">
+        <div class="title">
+            <h3>Отзывы</h3>
+            <hr>
+        </div>
+        <div class="re_box container">
+            <div class="slides-container">
+                <div class="re_card slide active">
+                    <img src="assets/media/reviews/2.png" alt="">
+                    <p>Попробовал чистящий гель – это просто волшебство! Справился с пятнами, которые я уже считал вечными. Быстрая доставка, удобный сайт, а главное – результат превзошел ожидания. Теперь только у вас!</p>
+                    <h3>– Егор</h3>
+                </div>
+                
+                <div class="re_card slide">
+                    <img src="assets/media/reviews/1.png" alt="">
+                    <p>Порошок справился с пятнами, которые я уже считала безнадежными. Быстрая доставка, удобный сайт, а результат – выше всяких похвал. Теперь буду заказывать только у вас. Спасибо за идеальную чистоту и комфорт в доме</p>
+                    <h3>– Елена</h3>
+                </div>
+                
+                <div class="re_card slide">
+                    <img src="assets/media/reviews/3.png" alt="">
+                    <p>Заказал чистящий гель Сарма – просто волшебство! Справился с пятнами, которые я уже считал вечными.
+                        Быстрая доставка, удобный сайт, а главное – результат на высоте. Теперь только у вас! Спасибо за
+                        чистоту в доме!</p>
+                    <h3>– Роман</h3>
+                </div>
+            </div>
+            
+            <div class="circles">
+                <div class="circle active" data-index="0"></div>
+                <div class="circle" data-index="1"></div>
+                <div class="circle" data-index="2"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container footer_main">
+            <div class="footer__img">
+                <img src="assets/logo/footer_logo.png" alt="">
+            </div>
+            <div class="call">
+                <h4>Обратная связь</h4>
+                <p>Оставьте заявку и наши менеджеры
+                    свяжутся с вами в течении 15 минут</p>
+                <form>
+                    <input type="text" placeholder="* Имя:">
+                    <input type="text" placeholder="* Телефон:">
+                    <label>Отправляя данную форму, вы соглашаетесь c
+                        <a href="#">Политикой конфиденциальности</a></label>
+                    <input type="submit" class="btn btn_first" value="Отправить">
+                </form>
+            </div>
+            <div class="contacts">
+                <h4>Контакты</h4>
+                <div class="con_box">
+                    <div class="phone">
+                        <img src="assets/media/icons/tel.png" alt="">
+                        <p>+7 (901) 701 35 25</p>
+                    </div>
+                    <div class="geo">
+                        <img src="assets/media/icons/geo.png" alt="">
+                        <p>ул Галеева, 3, подъезд 1</p>
+                    </div>
+                    <div class="mail">
+                        <img src="assets/media/icons/mail.png" alt="">
+                        <p>Blesk@mail.ru</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_last container">
+            <p>Блеск © 2025 | Все права защищены</p>
+            <h2>Митрофанов Михаил</h2>
+            <div class="icons">
+                <img src="assets/media/icons/tg.png" alt="">
+                <img src="assets/media/icons/wk.png" alt="">
+                <img src="assets/media/icons/youtube.png" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

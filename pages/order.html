@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блеск</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/logo/favicon.png" type="image/x-icon">
+    <script src="../assets/js/main.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <a href="#"><img src="../assets/logo/logo.png" class="logo" alt=""></a>
+            <nav>
+                <a href="../index.html">Главная</a>
+                <a href="../pages/about.html">О компании</a>
+                <a href="../pages/catalog.html">Каталог товаров</a>
+                <a href="../pages/trends.html">Тренды и гиды</a>
+                <a href="../pages/basket.html" class="basket"><img src="../assets/media/icons/basket.png" alt="">Корзина</a>
+            </nav>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <label for="menu-toggle" class="burger-icon">
+                <img src="../assets/media/icons/burger.svg" alt="Меню">
+            </label>
+            <div class="overlay"></div>
+            <div class="menu">
+                <nav>
+                    <a href="../index.html">Главная</a>
+                    <a href="../pages/about.html">О компании</a>
+                    <a href="../pages/catalog.html">Каталог товаров</a>
+                    <a href="../pages/trends.html">Тренды и гиды</a>
+                    <img src="../assets/logo/logo.png" alt="">
+                </nav>
+            </div>
+            <div class="bas_reg">
+                <a  href="../pages/basket.html"><img src="../assets/media/icons/basket.png"  alt="" class="header_bas"></a>
+                <a href="../pages/cabinet.html"><img src="../assets/media/icons/autoreg.png" class="autoreg" alt=""></a>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="order_page container">
+        <div class="title">
+            <h3>Оформить заказ</h3>
+            <hr>
+        </div>
+        <div class="order">
+            <div class="order_left">
+                <h2>Контактные данные</h2>
+                <div class="data">
+                    <label for="">Ваше имя</label>
+                    <input type="text" placeholder="Михаил" name="" id="">
+                    <label for="">Ваш email</label>
+                    <input type="email" placeholder="Mitrofanovm226@gmail.com" name="" id="">
+                    <label for="">Ваш телефон</label>
+                    <input type="tel" placeholder="+7 (901) 701 35 25" name="" id="">
+                    <div class="address">
+                        <label for="">Ваш адрес</label>
+                        <input type="text" placeholder="Город" name="" id="">
+                        <input type="text" placeholder="Улица" name="" id="">
+                        <div class="short_input">
+                            <input type="text" class="home" name="" id="" placeholder="Дом">
+                            <input type="text" class="cv" name="" id="" placeholder="Кв">
+                            <input type="text" class="ent" name="" id="" placeholder="Подъезд">
+                        </div>
+                        <textarea name="" id="" placeholder="Комментарий курьеру"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="order_right">
+                <h2>Способ оплаты</h2>
+                <div class="banks">
+                    <img src="../assets/media/order/1.png" alt="">
+                    <img src="../assets/media/order/2.png" alt="">
+                    <img src="../assets/media/order/3.png" alt="">
+                    <img src="../assets/media/order/4.png" alt="">
+                </div>
+                <div class="all_prices border_gray">
+                    <div class="one_pr">
+                        <p>Сумма</p>
+                        <p>650₽</p>
+                    </div>
+                    <hr>
+                    <div class="one_pr">
+                        <p>Промокод</p>
+                        <p>200₽</p>
+                    </div>
+                    <hr>
+                    <div class="one_pr total_pr">
+                        <p>Итого</p>
+                        <p>450₽</p>
+                    </div>
+                    <hr class="blue_hr">
+                </div>
+                <div class="btn btn_first" onclick="go_zakaz()">ПОДТВЕРДИТЬ ЗАКАЗ</div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container footer_main">
+            <div class="footer__img">
+                <img src="../assets/logo/footer_logo.png" alt="">
+            </div>
+            <div class="call">
+                <h4>Обратная связь</h4>
+                <p>Оставьте заявку и наши менеджеры
+                    свяжутся с вами в течении 15 минут</p>
+                <form>
+                    <input type="text" placeholder="* Имя:">
+                    <input type="text" placeholder="* Телефон:">
+                    <label>Отправляя данную форму, вы соглашаетесь c
+                        <a href="#">Политикой конфиденциальности</a></label>
+                    <input type="submit" class="btn btn_first" value="Отправить">
+                </form>
+            </div>
+            <div class="contacts">
+                <h4>Контакты</h4>
+                <div class="con_box">
+                    <div class="phone">
+                        <img src="../assets/media/icons/tel.png" alt="">
+                        <p>+7 (901) 701 35 25</p>
+                    </div>
+                    <div class="geo">
+                        <img src="../assets/media/icons/geo.png" alt="">
+                        <p>ул Галеева, 3, подъезд 1</p>
+                    </div>
+                    <div class="mail">
+                        <img src="../assets/media/icons/mail.png" alt="">
+                        <p>Blesk@mail.ru</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_last container">
+            <p>Блеск © 2025 | Все права защищены</p>
+            <h2>Митрофанов Михаил</h2>
+            <div class="icons">
+                <img src="../assets/media/icons/tg.png" alt="">
+                <img src="../assets/media/icons/wk.png" alt="">
+                <img src="../assets/media/icons/youtube.png" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

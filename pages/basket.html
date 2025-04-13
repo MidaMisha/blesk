@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блеск</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/logo/favicon.png" type="image/x-icon">
+    <script src="../assets/js/main.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <a href="#"><img src="../assets/logo/logo.png" class="logo" alt=""></a>
+            <nav>
+                <a href="../index.html">Главная</a>
+                <a href="../pages/about.html">О компании</a>
+                <a href="../pages/catalog.html">Каталог товаров</a>
+                <a href="../pages/trends.html">Тренды и гиды</a>
+                <a href="../pages/basket.html" class="basket"><img src="../assets/media/icons/basket.png" alt="">Корзина</a>
+            </nav>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <label for="menu-toggle" class="burger-icon">
+                <img src="../assets/media/icons/burger.svg" alt="Меню">
+            </label>
+            <div class="overlay"></div>
+            <div class="menu">
+                <nav>
+                    <a href="../index.html">Главная</a>
+                    <a href="../pages/about.html">О компании</a>
+                    <a href="../pages/catalog.html">Каталог товаров</a>
+                    <a href="../pages/trends.html">Тренды и гиды</a>
+                    <img src="../assets/logo/logo.png" alt="">
+                </nav>
+            </div>
+            <div class="bas_reg">
+                <a  href="../pages/basket.html"><img src="../assets/media/icons/basket.png"  alt="" class="header_bas"></a>
+                <a href="../pages/cabinet.html"><img src="../assets/media/icons/autoreg.png" class="autoreg" alt=""></a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- basket_page -->
+    <div class="basket_page container">
+        <div class="title">
+            <h3>Корзина</h3>
+            <hr>
+        </div>
+        <div class="basket">
+            <div class="products">
+                <div class="prod_card border_gray">
+                    <div class="img_name">
+                        <img src="../assets/media/catalog/1.png" alt="">
+                    <div class="name_price">
+                        <p>Чистящее средство для ванны DO-846</p>
+                        <h3>250₽</h3>
+                    </div>
+                    </div>
+                    
+                    <div class="counts_final">
+                        <div class="counts">
+                            <div class="minus">-</div>
+                            <div class="count">1</div>
+                        <div class="plus">+</div>
+                    </div>
+                    <div class="final_price">2333₽</div>
+                    <a href="#"><img src="../assets/media/icons/x.png" alt=""></a>
+                    </div>
+                    
+                </div>
+                <div class="prod_card border_gray">
+                    <div class="img_name">
+                        <img src="../assets/media/catalog/1.png" alt="">
+                    <div class="name_price">
+                        <p>Чистящее средство для ванны DO-846</p>
+                        <h3>250₽</h3>
+                    </div>
+                    </div>
+                    
+                    <div class="counts_final">
+                        <div class="counts">
+                            <div class="minus">-</div>
+                            <div class="count">1</div>
+                        <div class="plus">+</div>
+                    </div>
+                    <div class="final_price">2333₽</div>
+                    <a href="#"><img src="../assets/media/icons/x.png" alt=""></a>
+                    </div>
+                    
+                </div>
+                <div class="prod_card border_gray">
+                    <div class="img_name">
+                        <img src="../assets/media/catalog/1.png" alt="">
+                    <div class="name_price">
+                        <p>Чистящее средство для ванны DO-846</p>
+                        <h3>250₽</h3>
+                    </div>
+                    </div>
+                    
+                    <div class="counts_final">
+                        <div class="counts">
+                            <div class="minus">-</div>
+                            <div class="count">1</div>
+                        <div class="plus">+</div>
+                    </div>
+                    <div class="final_price">2333₽</div>
+                    <a href="#"><img src="../assets/media/icons/x.png" alt=""></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="basket_right">
+                <form class="promo border_gray">
+                    <p>Купон</p>
+                    <div class="in_btn">
+                        <input type="text" placeholder="Промокод">
+                    <button class="btn btn_first">Применить</button>
+                    </div>  
+                </form>
+                <div class="all_prices border_gray">
+                    <div class="one_pr">
+                        <p>Сумма</p>
+                        <p>650₽</p>
+                    </div>
+                    <hr>
+                    <div class="one_pr">
+                        <p>Промокод</p>
+                        <p>200₽</p>
+                    </div>
+                    <hr>
+                    <div class="one_pr total_pr">
+                        <p>Итого</p>
+                        <p>450₽</p>
+                    </div>
+                    <hr class="blue_hr">
+                </div>
+                <div class="btn btn_first" onclick="go_zakaz()">ОФОРМИТЬ ЗАКАЗ</div>
+                <script>
+                    function go_zakaz() {
+                        document.location = 'order.html';
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container footer_main">
+            <div class="footer__img">
+                <img src="../assets/logo/footer_logo.png" alt="">
+            </div>
+            <div class="call">
+                <h4>Обратная связь</h4>
+                <p>Оставьте заявку и наши менеджеры
+                    свяжутся с вами в течении 15 минут</p>
+                <form>
+                    <input type="text" placeholder="* Имя:">
+                    <input type="text" placeholder="* Телефон:">
+                    <label>Отправляя данную форму, вы соглашаетесь c
+                        <a href="#">Политикой конфиденциальности</a></label>
+                    <input type="submit" class="btn btn_first" value="Отправить">
+                </form>
+            </div>
+            <div class="contacts">
+                <h4>Контакты</h4>
+                <div class="con_box">
+                    <div class="phone">
+                        <img src="../assets/media/icons/tel.png" alt="">
+                        <p>+7 (901) 701 35 25</p>
+                    </div>
+                    <div class="geo">
+                        <img src="../assets/media/icons/geo.png" alt="">
+                        <p>ул Галеева, 3, подъезд 1</p>
+                    </div>
+                    <div class="mail">
+                        <img src="../assets/media/icons/mail.png" alt="">
+                        <p>Blesk@mail.ru</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_last container">
+            <p>Блеск © 2025 | Все права защищены</p>
+            <h2>Митрофанов Михаил</h2>
+            <div class="icons">
+                <img src="../assets/media/icons/tg.png" alt="">
+                <img src="../assets/media/icons/wk.png" alt="">
+                <img src="../assets/media/icons/youtube.png" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
