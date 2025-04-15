@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель администратора</title>
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="shortcut icon" href="../assets/media/admin/admin_photo.png" type="image/x-icon">
+    <script src="../assets/js/admin.js" defer></script>
+</head>
+
+<body>
+    <div class="mobile-menu-btn" onclick="toggleSidebar()">☰</div>
+    <div class="sidebar side_prod" id="sidebar">
+        <a href="admin_users.html" alt=""class="opac" ><img src="../assets/media/admin/autoreg.png">Авторизованные
+            клиенты</a>
+        <a href="admin_products.html"class="opac"><img src="../assets/media/admin/products.png">Товары</a>
+        <a href="admin_trends.html" ><img src="../assets/media/admin/trends.png">Тренды и гиды</a>
+        <button onclick="document.location = '../index.html'">ВЫЙТИ</button>
+    </div>
+
+    <div class="main">
+        <a href="#"><img src="../assets/media/admin/admin_photo.png" alt="">Администратор</a>
+        <div class="main-head">
+            <div class="header">Тренды и гиды</div>
+        </div>
+
+        <div class="trend_box">
+            <div class="trend_card">
+                <img src="../assets/media/trends/1.png" alt="">
+                <div class="trend_text">
+                    <h3>Топ-3 тренда 2025 года</h3>
+                    <div class="gid">
+                        <h4>Эко-средства -</h4>
+                        <p>Биоразлагаемая бытовая химия для заботы о природе.</p>
+                    </div>
+                    <div class="gid">
+                        <h4>Многофункциональные продукты -</h4>
+                        <p>Одно средство для всех поверхностей.</p>
+                    </div>
+                    <div class="gid">
+                        <h4>Ароматы для настроения – </h4>
+                        <p>Освежители с натуральными эфирными маслами.</p>
+                    </div>
+                </div>
+                <button class="btn edit-btn">Изменить</button>
+            </div>
+            <div class="trend_card">
+                <img src="../assets/media/trends/2.png" alt="">
+                <div class="trend_text">
+                    <h3>Выбор стирального порошка</h3>
+                    <div class="gid">
+                        <h4>Для белого белья -</h4>
+                        <p>Порошки с кислородными отбеливателями</p>
+                    </div>
+                    <div class="gid">
+                        <h4>Для цветных тканей -</h4>
+                        <p>Порошки с кислородными отбеливателями</p>
+                    </div>
+                    <div class="gid">
+                        <h4>Для детских вещей – </h4>
+                        <p>Гипоаллергенные составы без отдушек</p>
+                    </div>
+                </div>
+                <button class="btn">Изменить</button>
+            </div>
+            <div class="trend_card">
+                <img src="../assets/media/trends/3.png" alt="">
+                <div class="trend_text">
+                    <h3>Рейтинг освежителей воздуха</h3>
+                    <div class="gid">
+                        <h4>Glade "Морской бриз" -</h4>
+                        <p>Свежесть на весь день</p>
+                    </div>
+                    <div class="gid">
+                        <h4>Air Wick "Лаванда -</h4>
+                        <p>Расслабляющий аромат для спальни</p>
+                    </div>
+                    <div class="gid">
+                        <h4>AOS "Цитрус" – </h4>
+                        <p>Бодрящий запах для кухни</p>
+                    </div>
+                </div>
+                <button class="btn">Изменить</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="editModal">
+        <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+          <h3>Редактировать товар</h3>
+          <label >Фотография</label>
+          <input type="file">
+          <label >Главное название</label>
+          <input type="text"  value="">
+          <label >Первое название</label>
+          <input type="number"  value="">
+          <label >Первое описание</label>
+          <input type="text"  value="">
+          <label >Второе название:</label>
+          <input type="text"  value="">
+          <label >Второе описание:</label>
+          <input type="text"  value="">
+          <label >Третье название:</label>
+          <input type="text"  value="">
+          <label >Третье описание:</label>
+          <input type="text"  value="">
+          <button class="save">Сохранить</button>
+        </div>
+      </div>
+    
+</body>
+
+</html>

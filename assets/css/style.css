@@ -75,6 +75,100 @@ body::-webkit-scrollbar {
     background-color: #FFFFFF;
 }
 
+/* Модальное окно */
+.modal-auth {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-auth-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 25px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: modalopen 0.3s;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-auth-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-auth-close:hover {
+    color: #333;
+}
+
+.modal-auth h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.modal-auth .form-group {
+    margin-bottom: 20px;
+}
+
+.modal-auth label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+}
+
+.modal-auth input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.modal-auth input:focus {
+    outline: none;
+    border-color: #1C7ABF;
+}
+
+.modal-auth .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #1C7ABF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal-auth .submit-btn:hover {
+    background-color: #155a8a;
+}
+
 /* header */
 header {
     position: fixed;
@@ -142,7 +236,7 @@ header .basket img {
 
 header .burger-icon {
     position: fixed;
-    right: 10px;
+    right: 7vw;
     top: 15px;
     width: 37px;
     height: 37px;
@@ -167,8 +261,10 @@ header .menu {
 }
 
 header .menu nav {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 
@@ -207,6 +303,10 @@ header .overlay {
 
 /* banner */
 .banner_bg {
+    margin-top: 80px;
+}
+
+.banner_bg {
     width: 100vw;
     height: 85dvh;
     max-height: 1000px;
@@ -214,7 +314,7 @@ header .overlay {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    padding-top: 300px;
+    padding-top: 220px;
 }
 
 .banner_text h1 {
@@ -2656,11 +2756,13 @@ textarea {
         align-items: center;
         justify-content: end;
         gap: 10px;
+        margin-right: 60px;
     }
 
     .header_bas {
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
+        margin-bottom: 2px;
         display: block;
     }
 
@@ -2670,7 +2772,6 @@ textarea {
     }
 
     header .autoreg {
-        margin-right: 25px;
         width: 37px;
         height: 37px;
     }

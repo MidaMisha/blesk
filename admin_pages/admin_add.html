@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Панель администратора</title>
+  <link rel="stylesheet" href="../assets/css/admin.css">
+  <link rel="shortcut icon" href="../assets/media/admin/admin_photo.png" type="image/x-icon">
+  <script src="../assets/js/admin.js" defer></script>
+</head>
+
+<body>
+  <div class="mobile-menu-btn" onclick="toggleSidebar()">☰</div>
+  <div class="sidebar side_prod" id="sidebar">
+    <a href="admin_users.html" alt="" class="opac"><img src="../assets/media/admin/autoreg.png">Авторизованные клиенты</a>
+    <a href="admin_products.html"><img src="../assets/media/admin/products.png">Товары</a>
+    <a href="admin_trends.html" class="opac"><img src="../assets/media/admin/trends.png">Тренды и гиды</a>
+    <button onclick="document.location = '../index.html'">ВЫЙТИ</button>
+</div>
+  <div class="main">
+    <a href="#"><img src="../assets/media/admin/admin_photo.png" alt=""> Администратор</a>
+    <div class="main-head">
+        <div class="header">Добавить товар</div>
+    <button class="add-button" onclick="document.location='admin_products.html'">Назад</button>
+    </div>
+
+    <div class="prod_add">
+        <div class="add-content">
+          <h3>Добавить товар</h3>
+          <label >Фотографии</label>
+          <input type="file">
+          <label >Название товара</label>
+          <input type="text" placeholder="Название товара" value="Мыло жидкое 5л ISABELLA">
+          <label >Объём (кг)</label>
+          <input type="number" placeholder="Объём (кг)" value="5">
+          <label >Аромат</label>
+          <input type="text" placeholder="Аромат" value="Зеленый чай">
+          <label >Вес (кг)</label>
+          <input type="text" placeholder="Вес (кг)" value="5.745">
+          <label >Консистенция:</label>
+          <input type="text" placeholder="Консистенция:" value="Жидкость">
+          <label >Количество (шт):</label>
+          <input type="text" placeholder="Количество (шт):" value="1">
+          <label >Цена (₽):</label>
+          <input type="text" placeholder="Цена (₽):" value="774">
+          <label >Назначение:</label>
+          <select>
+            <option selected>Для кухни</option>
+            <option>Для ванной</option>
+            <option>Универсальное</option>
+          </select>
+          <label >Описание</label>
+          <textarea placeholder="Описание">Жидкое мыло ISABELLA зелёный чай с антибактериальным эффектом...</textarea>
+          <button class="save">Сохранить</button>
+        </div>
+      </div>
+  </div>
+
+</div>
+</body>
+</html>

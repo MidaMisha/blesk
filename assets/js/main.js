@@ -40,3 +40,21 @@ document.addEventListener('DOMContentLoaded', function() {
     showSlide(0);
     startSlider();
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Функции для открытия/закрытия
+    window.openAuthModal = function() {
+      document.getElementById('authModal').style.display = 'block';
+    }
+  
+    window.closeAuthModal = function() {
+      document.getElementById('authModal').style.display = 'none';
+    }
+    
+    window.onclick = function(event) {
+      const modal = document.getElementById('authModal');
+      if (event.target == modal) {
+        closeAuthModal();
+      }
+    }
+  });
