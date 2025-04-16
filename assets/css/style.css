@@ -98,6 +98,25 @@ body::-webkit-scrollbar {
     animation: modalopen 0.3s;
 }
 
+.modal-auth-content .cab_reg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #222222a3;
+}
+
+.modal-auth-content a {
+    font-size: 20px;
+    color: #000;
+    transition: .5s ease;
+}
+
+.modal-auth-content a:hover {
+    font-weight: 600;
+}
+
 @keyframes modalopen {
     from {
         opacity: 0;
@@ -155,18 +174,13 @@ body::-webkit-scrollbar {
 
 .modal-auth .submit-btn {
     width: 100%;
-    padding: 12px;
     background-color: #1C7ABF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    color: #fff;
 }
 
 .modal-auth .submit-btn:hover {
-    background-color: #155a8a;
+    background-color: #fff;
+    color: #1C7ABF;
 }
 
 /* header */
@@ -520,7 +534,7 @@ header .overlay {
 
 /* catalog */
 .catalog {
-    margin-top: 120px;
+    margin-top: 200px;
 }
 
 .catalog_box {
@@ -905,7 +919,7 @@ footer .icons {
     margin-bottom: 50px;
 }
 
-.catalog .btn-filtering {
+.btn-filtering {
     background-color: #FFFFFF;
     border: none;
     outline: none;
@@ -932,11 +946,11 @@ footer .icons {
     font-weight: 700;
 }
 
-.catalog .filtering .btn-filtering:focus {
+.btn-filtering:focus {
     color: #1C7ABF;
 }
 
-.catalog .filtering .btn-filtering:hover {
+.btn-filtering:hover {
     text-decoration: underline;
 }
 
@@ -953,6 +967,56 @@ footer .icons {
     background-color: #000000;
     color: #FFFFFF;
 }
+
+.modal_filter {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+  }
+
+  
+.modal_filter .btn {
+    height: 52.8px;
+    font-size: 24px;
+    font-weight: 700;
+}
+  
+  .modal_filter-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 40%;
+    border-radius: 12px;
+  }
+
+  .modal_filter-content h2{
+    margin-bottom: 10px;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #000;
+  }
+  
+  .more-categories .btn {
+    margin: 10px;
+    font-size: 20px;
+  }
+
 
 /* about page */
 .about_page .about_center>p {
@@ -1032,7 +1096,7 @@ footer .icons {
 
 /* trends page */
 .trends {
-    margin-top: 20 0px;
+    margin-top: 200px;
 }
 
 .trend_box {
@@ -1551,7 +1615,8 @@ textarea {
 }
 
 .order .short_input .cv {
-    width: 95px;
+    max-width: 60px;
+    padding: 13px 15px;
 }
 
 .order .order_right {
@@ -1791,6 +1856,14 @@ textarea {
     margin-top: 13px;
 }
 
+.orders-container {
+    transition: all 0.3s ease;
+}
+
+.hidden-orders {
+    overflow: hidden;
+}
+
 .btn_delete_block {
     margin-top: 100px;
     width: 100%;
@@ -1805,6 +1878,104 @@ textarea {
     border: 1px solid #E62D39;
     font-size: 22px;
     padding: 15px 50px;
+}
+
+/* Стили для модальных окон */
+.modal_cab {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal_cab h3 {
+    font-weight: 700;
+    font-size: 27px;
+    color: #1C7ABF;
+    margin-bottom: 25px;
+}
+
+.modal_cab-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 20px #1C7ABF;
+}
+
+.close-modal_cab {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal_cab:hover {
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 38px;
+}
+
+.form-group input {
+    width: 100%;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 13px 26px;
+}
+/* registration */
+.register_main{
+    margin-top: 180px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.register label {
+    color: #000;
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 33px;
+}
+
+.register .btn{
+    border: 2px solid #1C7ABF;
+}
+
+.register  input,
+textarea {
+    border: 1px solid #000000;
+    font-weight: 400;
+    font-size: 25px;
+    padding: 13px 26px;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%;
 }
 
 @media screen and (max-width: 1210px) {
@@ -2059,7 +2230,7 @@ textarea {
         font-size: 15px;
     }
 
-    form {
+    footer form {
         margin-top: 28px;
         gap: 12px;
     }
@@ -2792,6 +2963,7 @@ textarea {
     .banner_bg {
         padding-top: 200px;
         height: 70dvh;
+        margin-top: 50px;
     }
 
     .banner_text h1 {
@@ -3055,7 +3227,7 @@ textarea {
         font-size: 15px;
     }
 
-    form {
+    footer form  {
         margin-top: 28px;
         gap: 12px;
     }
@@ -3679,10 +3851,6 @@ textarea {
         gap: 26px;
     }
 
-    .one_del .del_btn .del_update {
-        color: #48798B;
-    }
-
     .one_del .del_btn .del_delete {
         color: #E62D39;
     }
@@ -3766,6 +3934,27 @@ textarea {
         padding: 15px 40px;
     }
 
+    .modal_cab-content {
+        margin: 20% auto;
+        padding: 15px;
+        font-weight: 15px;
+      }
+
+      .modal_cab h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        font-size: 18px;
+        line-height: 120%;
+    }
+    
+    .form-group input {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
     /* catalog_page*/
     .catalog .filtering {
         margin-bottom: 40px;
@@ -3813,5 +4002,28 @@ textarea {
 
     .catalog .filtering .second_filter .btn {
         font-size: 18px;
+    }
+
+    .modal_filter-content {
+        margin: 20% auto;
+        padding: 15px;
+        width: 80%;
+      }
+
+    /* register */
+    .register_main{
+        margin-top: 120px;
+    }
+
+    .register label {
+        font-size: 18px;
+        margin-top: 24px;
+    }
+
+    .register  input,
+    textarea {
+        font-size: 19px;
+        padding: 10px 20px;
+        margin-top: 15px;
     }
 }

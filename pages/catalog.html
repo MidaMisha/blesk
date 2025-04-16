@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Блеск</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/main.js" defer></script>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -15,7 +18,8 @@
                 <a href="../pages/about.html">О компании</a>
                 <a href="../pages/catalog.html">Каталог товаров</a>
                 <a href="../pages/trends.html">Тренды и гиды</a>
-                <a href="../pages/basket.html" class="basket"><img src="../assets/media/icons/basket.png" alt="">Корзина</a>
+                <a href="../pages/basket.html" class="basket"><img src="../assets/media/icons/basket.png"
+                        alt="">Корзина</a>
             </nav>
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
 
@@ -33,13 +37,14 @@
                 </nav>
             </div>
             <div class="bas_reg">
-                <a  href="../pages/basket.html"><img src="../assets/media/icons/mob_basket.png"  alt="" class="header_bas"></a>
+                <a href="../pages/basket.html"><img src="../assets/media/icons/mob_basket.png" alt=""
+                        class="header_bas"></a>
                 <a href="../pages/cabinet.html"><img src="../assets/media/icons/autoreg.png" class="autoreg" alt=""></a>
             </div>
 
         </div>
     </header>
-    
+
     <div class="catalog container catalog_page">
         <div class="title">
             <h3>Каталог товаров</h3>
@@ -48,15 +53,28 @@
         <div class="filtering">
             <div class="first_filter">
                 <button class="btn-filtering btn" autofocus>Все</button>
-                <button class="btn-filtering btn" >Для полов</button>
-                <button class="btn-filtering btn" >Универсальные</button>
-                <button class="btn-filtering btn" >Для кухни</button>
-                <button class=" btn btn_first" >Больше</button>
+                <button class="btn-filtering btn">Для полов</button>
+                <button class="btn-filtering btn">Универсальные</button>
+                <button class="btn-filtering btn">Для кухни</button>
+                <button class=" btn btn_first">Больше</button>
             </div>
             <div class="second_filter">
                 <button class="btn btn_fil_sec btn" autofocus>Хиты</button>
                 <button class="btn btn_fil_sec btn">Рейтинг</button>
                 <button class="btn btn_fil_sec btn">Новинки</button>
+            </div>
+        </div>
+        <!-- Модальное окно -->
+        <div id="moreCategoriesmodal_filter" class="modal_filter">
+            <div class="modal_filter-content">
+                <span class="close">&times;</span>
+                <h2>Другие категории</h2>
+                <div class="more-categories">
+                    <button class="btn btn-filtering">Для ванной</button>
+                    <button class="btn btn-filtering">Антибактериальные</button>
+                    <button class="btn btn-filtering">Для стекол</button>
+                    <button class="btn btn-filtering">Для туалета</button>
+                </div>
             </div>
         </div>
         <div class="catalog_box">
@@ -197,13 +215,13 @@
             <div class="call">
                 <h4>Обратная связь</h4>
                 <p>Оставьте заявку и наши менеджеры
-                    свяжутся с вами в течении 15 минут</p>  
-                <form >
+                    свяжутся с вами в течении 15 минут</p>
+                <form>
                     <input type="text" placeholder="* Имя:">
                     <input type="text" placeholder="* Телефон:">
                     <label>Отправляя данную форму, вы соглашаетесь c
                         <a href="#">Политикой конфиденциальности</a></label>
-                        <input type="submit" class="btn btn_first" value="Отправить">
+                    <input type="submit" class="btn btn_first" value="Отправить">
                 </form>
             </div>
             <div class="contacts">
@@ -233,6 +251,7 @@
                 <img src="../assets/media/icons/youtube.png" alt="">
             </div>
         </div>
-      </footer>
+    </footer>
 </body>
+
 </html>
