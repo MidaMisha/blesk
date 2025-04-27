@@ -24,15 +24,13 @@ for(let i = 0; i < imgElCar.length; i++){
 
 document.querySelectorAll('.accordion').forEach(accordion => {
     accordion.addEventListener('click', function() {
-        // Закрываем все другие панели
+        
         document.querySelectorAll('.panel').forEach(panel => {
             if (panel !== this.nextElementSibling) {
                 panel.classList.remove('active');
                 panel.previousElementSibling.querySelector('.arrow').textContent = '▼';
             }
         });
-        
-        // Переключаем текущую панель
         this.classList.toggle('active');
         const panel = this.nextElementSibling;
         panel.classList.toggle('active');
